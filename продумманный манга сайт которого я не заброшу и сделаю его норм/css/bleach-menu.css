@@ -219,13 +219,3 @@ body{
     height: auto;
     color:  rgb(255, 249, 217);
 }
-.bleach{
-
-}
-.navbar-bleach{
-    transform: translateY(100px);
-    width: 1500px;
-    height: 300px;
-    background-color: black;
-    margin: 0 auto; 
-}
