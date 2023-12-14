@@ -219,3 +219,53 @@ body{
     height: auto;
     color:  rgb(255, 249, 217);
 }
+.navbar-information{
+    position: absolute;
+    width: 1405px;
+    height: 360px;
+    background-color: black;
+    left: 500px;
+    border-radius: 16px;
+}
+.information-menu{
+    background-color: rgb(255, 249, 217);
+    border-radius: 30px;
+    padding: 10px 10px;
+    border: 1px solid  rgb(255, 249, 217);
+    font-size: 30px;
+    color: black;
+    transform: translateX(410px) translateY(10px); 
+    float: left;
+    margin-left: 200px;
+}
+.information-text{
+    border-radius: 20px;
+    width: 1352px;
+    height: 256px;
+    padding: 5px 5px;
+    background-color: rgb(255, 249, 217);
+    border: 1px solid rgb(255, 249, 217);
+    position: fixed;
+    left: 520px;
+    top: 630px;
+    color: black;
+    font-size: 20px;
+}
+.read-book{
+    background-image: linear-gradient(to left, #f1760b 0%, #ec200a 100%);
+    position: absolute;
+    left: 253px;
+    top: 810px;
+    width: 225px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0;
+    font-family: 'Mukta', sans-serif;
+    cursor: pointer;
+}
+.read-book:hover{
+    background-image: linear-gradient(to top,  #f1760b 0%, #ec200a 100%);
+}
+.read-book:active {
+    background-image: linear-gradient(to top, rgb(28, 200, 238), rgb(91, 16, 222));
+  }
