@@ -6,6 +6,9 @@
 body{
     background-color :rgb(255, 249, 217);
 }
+@media screen and (max-width:1024px) {
+    
+}
 .katalog{
     width: 100px;
     height: 20px;
@@ -224,6 +227,17 @@ body{
     z-index: 1;
 }
 .navbar-bleach{
+    z-index: 1;
+    transform: translateY(100px);
+    width: 1500px;
+    height: 300px;
+    background-color: black;
+    margin: 0 auto; 
+}
+.eva{
+    z-index: 1;
+}
+.navbar-eva{
     z-index: 1;
     transform: translateY(100px);
     width: 1500px;
