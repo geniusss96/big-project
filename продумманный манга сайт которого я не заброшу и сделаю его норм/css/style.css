@@ -6,9 +6,6 @@
 body{
     background-color :rgb(255, 249, 217);
 }
-@media screen and (max-width:1024px) {
-    
-}
 .katalog{
     width: 100px;
     height: 20px;
@@ -244,4 +241,80 @@ body{
     height: 300px;
     background-color: black;
     margin: 0 auto; 
+}
+@media screen and (max-width:1900px) {
+    .site-name{
+        position: fixed;
+        left: 1px;
+    }
+}
+@media screen and (max-width:1440px) {
+    .dropdown{
+        position: fixed;
+        left: 300px;
+    }
+    .top-manga{
+        position: fixed;
+        left: 400px;
+    }
+    .new-anime{
+        position: fixed;
+        left: 500px;
+    }
+    .watch-anime{
+        position: fixed;
+        left: 600px;
+    }
+    .search-icon{
+        position: fixed;
+        left: 900px;
+    }
+    .search{
+        position: fixed;
+        left: 930px;
+    }
+    .sun-img{
+        position: fixed;
+        left: 1170px;
+    }
+    .regestration{
+        position: fixed;
+        left: 1260px;
+    }
+    .entrance{
+        position: fixed;
+        left: 1390px;
+    }
+}
+@media screen and (max-width:768px) {
+    .site-name{
+        position: fixed;
+        left: 650px;
+    } 
+    .dropdown{
+        display: none;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .watch-anime{
+        display: none;
+    }
+    .search-icon{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .sun-img{
+        display: none;
+    }
+    .regestration{
+        position: fixed;
+        left: 1200px;
+    }
+    .entrance{
+        position: fixed;
+        left: 1330px;
+}
 }
