@@ -133,6 +133,7 @@ body{
     padding: 10px;
     border: 0px;
     cursor: pointer;
+    font-size: 18px;
 }
   
 .dropdown-content{
@@ -182,7 +183,7 @@ body{
     border: 1px solid  rgb(255, 249, 217);
     padding: 10px 10px;
     background-color: rgb(255, 249, 217);
-    transition: background-color 0.4s ease;
+    transition: all 0.4s ease;
 }
 .watch-anime{
     font-size: 18px;
@@ -251,19 +252,19 @@ body{
 @media screen and (max-width:1440px) {
     .dropdown{
         position: fixed;
-        left: 300px;
+        left: 250px;
     }
     .top-manga{
         position: fixed;
-        left: 400px;
+        left: 350px;
     }
     .new-anime{
         position: fixed;
-        left: 500px;
+        left: 450px;
     }
     .watch-anime{
         position: fixed;
-        left: 600px;
+        left: 540px;
     }
     .search-icon{
         position: fixed;
@@ -285,11 +286,21 @@ body{
         position: fixed;
         left: 1390px;
     }
+    .navbar-bleach{
+    width: 1000px;
+    height: 300px;
+    }
+    .navbar-eva{
+        width: 1000px;
+        height: 300px; 
+    }
 }
 @media screen and (max-width:768px) {
     .site-name{
-        position: fixed;
-        left: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     } 
     .dropdown{
         display: none;
