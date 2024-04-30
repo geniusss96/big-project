@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
-body{
+html, body {
     background-color :rgb(255, 249, 217);
+    width: auto;    
 }
+
 .katalog{
     width: 100px;
     height: 20px;
@@ -22,22 +24,49 @@ body{
     top: 10px;
     background-color: transparent;
 }
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     height: 60px;
     background-color: black;
     opacity: 1;
+    display: flex; /* Делаем навигационное меню flex-контейнером */
+    justify-content: space-between; /* Выравниваем элементы по краям */
+    align-items: center; /* Выравниваем элементы по вертикали */
 }
 
-.site-name{
-    position: fixed;
-    top: 5px;
-    left: 130px;
+.site-name {
     color: rgb(255, 249, 217);
     font-size: 45px;
     font-family: 'Cabin Sketch', sans-serif;
+    margin-left: 20px; /* Добавляем небольшой отступ слева */
 }
+
+.navbar-text-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Добавляем небольшой отступ справа */
+}
+
+.bleach-janr,
+.bleach-glav-and-tom,
+.bleach-status,
+.bleach-tim-anime,
+.bleach-type{
+    font-size: 24px;
+}
+
+.top-manga,
+.new-anime,
+.watch-anime,
+.search,
+.regestration,
+.entrance,
+.sun-img,
+.night-img {
+    margin-left: 20px; /* Добавляем отступ между элементами */
+}
+
 .katalog{
     font-size: 18px;
     position: fixed;
@@ -243,89 +272,99 @@ body{
     background-color: black;
     margin: 0 auto; 
 }
-@media screen and (max-width:1900px) {
-    .site-name{
-        position: fixed;
-        left: 1px;
+/* Адаптивные стили для экранов до 1900px */
+@media screen and (max-width: 1900px) {
+    .site-name {
+        left: 5%;
+        font-size: 36px; /* Уменьшаем размер имени сайта */
     }
 }
-@media screen and (max-width:1440px) {
+
+/* Адаптивные стили для экранов до 1440px */
+@media screen and (max-width: 1440px) {
+    .site-name{
+        font-size: 28px;
+    }
     .dropdown{
-        position: fixed;
-        left: 250px;
-    }
-    .top-manga{
-        position: fixed;
-        left: 350px;
-    }
-    .new-anime{
-        position: fixed;
-        left: 450px;
-    }
-    .watch-anime{
-        position: fixed;
-        left: 540px;
-    }
-    .search-icon{
-        position: fixed;
-        left: 900px;
-    }
-    .search{
-        position: fixed;
-        left: 930px;
-    }
-    .sun-img{
-        position: fixed;
-        left: 1170px;
-    }
-    .regestration{
-        position: fixed;
-        left: 1260px;
-    }
-    .entrance{
-        position: fixed;
-        left: 1390px;
-    }
-    .navbar-bleach{
-    width: 1000px;
-    height: 300px;
-    }
-    .navbar-eva{
-        width: 1000px;
-        height: 300px; 
-    }
-}
-@media screen and (max-width:768px) {
-    .site-name{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        left: 20%;
     } 
-    .dropdown{
+    .top-manga {
+        left: 34%;
+    }
+    .new-anime {
+        left: 51%;
+    }
+    .watch-anime {
+        left: 64%;
+    }
+    .search-icon {
         display: none;
     }
-    .navbar-menu{
+    .search {
         display: none;
     }
-    .watch-anime{
-        display: none;
+    .regestration {
+        left: 89%;
     }
-    .search-icon{
-        display: none;
+    .entrance {
+        left: 81%;
     }
-    .search{
-        display: none;
+    .navbar-bleach,
+    .navbar-eva {
+        width: 90%;
     }
-    .sun-img{
-        display: none;
-    }
-    .regestration{
-        position: fixed;
-        left: 1200px;
-    }
-    .entrance{
-        position: fixed;
-        left: 1330px;
 }
+
+/* Адаптивные стили для экранов до 768px */
+@media screen and (max-width: 768px) {
+    .site-name {
+        display: block;
+        text-align: center;
+        position: static;
+        margin: 0 auto;
+        font-size: 34px; /* Уменьшаем размер имени сайта для маленьких экранов */
+    } 
+    .dropdown,
+    .watch-anime,
+    .search-icon,
+    .search,
+    .sun-img,
+    .top-manga,
+    .new-anime,
+    .entrance,
+    .regestration {
+        display: none; /* Удаляем некоторые элементы для маленьких экранов */
+    }
+
+}
+
+/* Адаптивные стили для экранов до 320px */
+@media screen and (max-width: 320px) {
+    .site-name {
+        font-size: 18px;
+    }
+
+    .top-manga,
+    .new-anime,
+    .watch-anime {
+        font-size: 12px;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+    }
+
+    .dropdown-button {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    .sun-img,
+    .night-img {
+        display: none;
+    }
 }
