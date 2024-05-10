@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gold;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 24px;
+}
+.logo:hover{
+    color:  rgb(194, 13, 13);
+    transition: 0.5s all ease-in-out;
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+#katalog {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+/* Изменение внешнего вида при наведении */
+#katalog:hover {
+    border-color: #ff6600;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: rgb(194, 13, 13); /* Change color on hover */
+}
+
+
+/* Общие стили для карточки */
+.card {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-decoration: none;
+}
+
+.card-image {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 38px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.card-text {
+    margin-top: 3px;
+    color: #ffffff;
+    flex: 1;
+}
+
+.button {
+    background-color:  rgb(194, 13, 13);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.button:hover {
+    background-color:  rgb(145, 7, 7);
+}
+
+.mobile-script-text{
+    position: relative;
+    top: -25px;
+}
+
+
+
+
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Display menu toggle for small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex; /* Display nav links when menu is active */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+
+    .menu-toggle.active ~ .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ffffff;
+        border-top: none;
+        z-index: 1000;
+    }
+
+    .menu-toggle.active ~ .nav-links li {
+        margin-right: 0;
+    }
+
+    .menu-toggle.active ~ .nav-links a {
+        padding: 10px 20px;
+    }
+
+    .mobile-script-text {
+        display: none;
+    }
+
+    .button{
+        display: none;
+    }
+}
