@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
 html{
+    font-family: "Montserrat", sans-serif;
     background-color: gold;
 }
-
 
 .navbar-container {
     max-width: 1880px;
@@ -21,6 +23,8 @@ html{
 
 .logo {
     cursor: pointer;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
     color: white;
     font-size: 24px;
 }
@@ -113,6 +117,9 @@ html{
     cursor: pointer;
 }
 
+.mobile-opisaniya{
+    display: none;
+}
 .read-book:hover{
     background-image: linear-gradient(to top,  #f1760b 0%, #ec200a 100%);
 }
@@ -159,7 +166,7 @@ html{
 .card-opisaniya {
     display: block;
     width: 1550px;
-    height: 280px;
+    height: auto;
     background: black;
     order: 1; /* Помещаем этот элемент в самый конец */
     /* Дополнительные стили могут быть добавлены по вашему усмотрению */
@@ -226,6 +233,19 @@ html{
        display: none;
     }
 
+    .mobile-opisaniya {
+        height: auto; /* Высота карточки */
+        background-color: #000000; /* Цвет фона карточки */
+        border: 1px solid #fff; /* Граница карточки */
+        border-radius: 10px; /* Радиус скругления углов */
+        color: gold;
+        margin: 20px; /* Внешние отступы карточки */
+        margin-top: 140px;
+        padding: 10px; /* Внутренние отступы карточки */
+        display: flex;
+    }
+    
+    
     .janr-mobile{
         border-radius: 24px;
         padding: 10px 0 0 15px;
@@ -236,6 +256,7 @@ html{
         height: 100px;
         background-color: black;
     }
+    
 }
 
 /* Media query for mobile devices */

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 
 body{
     background-color: gold;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -24,6 +26,8 @@ nav {
 }
 
 .logo {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
     cursor: pointer;
     font-size: 24px;
 }
@@ -114,7 +118,7 @@ nav {
 }
 
 .card-text {
-    margin-top: 3px;
+    margin-top: 1px;
     color: #ffffff;
     flex: 1;
 }
