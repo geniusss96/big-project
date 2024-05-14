@@ -90,6 +90,8 @@ html{
 }
 
 .main-manga {
+    width: 240px;
+    height: auto;
     border-radius: 24px;
     position: relative;
     float: left; /* Добавляем свойство float для выравнивания элемента слева */
@@ -213,7 +215,7 @@ html{
         margin-top: 30px;
     }
     .anime-name {
-
+        font-size: 24px;
         margin-left: 40px; /* Изменяем отступы */
         margin-top: 0;
     }
@@ -236,26 +238,32 @@ html{
     }
 
     .mobile-opisaniya {
-        height: auto; /* Высота карточки */
-        background-color: #000000; /* Цвет фона карточки */
-        border: 1px solid #fff; /* Граница карточки */
-        border-radius: 10px; /* Радиус скругления углов */
+        position: absolute;
+        left: 50%;
+        top: 400px;
+        transform: translateX(-50%);
+        height: auto;
+        background-color: #000000;
+        border: 1px solid #fff;
+        border-radius: 10px;
         color: gold;
-        margin: 20px; /* Внешние отступы карточки */
-        margin-top: 140px;
-        padding: 10px; /* Внутренние отступы карточки */
+        padding: 10px;
         display: flex;
+        width: 90%; /* Измените на нужное вам значение в процентах */
+        max-width: 560px; /* Максимальная ширина для контроля размеров на больших экранах */
     }
-    
+      
     
     .janr-mobile{
+        font-size: 24px;
+        margin-top: 20px;
         border-radius: 24px;
         padding: 10px 0 0 15px;
         color: gold;
         margin-left: 190px;
         display: block;
-        width: 140px;
-        height: 100px;
+        width: 185px;
+        height: auto;
         background-color: black;
     }
     
@@ -317,5 +325,12 @@ html{
 
     .button{
         display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .janr-mobile{
+        font-size: 16px;
+        width: 120px;
     }
 }

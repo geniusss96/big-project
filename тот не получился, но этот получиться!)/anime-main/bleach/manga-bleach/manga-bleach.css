@@ -122,6 +122,27 @@ nav {
     background-color: rgba(0, 0, 0, 0.3); /* Цвет затемнения */
 }
 
+.manga-main {
+    display: flex; /* Используем flexbox для расположения изображений */
+    flex-direction: column; /* Располагаем изображения друг над другом */
+    align-items: center; /* Центрируем изображения по горизонтали */
+    margin: 0 auto; /* Центрируем блок .manga-main по горизонтали */
+    max-width: 100%; /* Максимальная ширина блока */
+    padding: 20px; /* Добавляем немного отступов */
+}
+
+.manga-main img {
+    max-width: 100%; /* Сделать изображения адаптивными */
+    height: auto; /* Сохранить пропорции изображения */
+    margin-bottom: 10px; /* Добавить отступ между изображениями */
+}
+
+@media (max-width: 768px) {
+    .manga-main {
+        padding: 10px; /* Уменьшаем отступы для мобильных устройств */
+    }
+}
+
 
 
 @media screen and (max-width: 2268px) and (min-width: 1px) {
