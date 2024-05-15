@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -14,6 +15,16 @@ nav {
     background-color: #000000;
     color: #fff;
     padding: 10px 0;
+}
+
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .navbar-container {
@@ -85,6 +96,26 @@ nav {
     color: rgb(194, 13, 13); /* Change color on hover */
 }
 
+.input {
+    padding-right: 30px; /* Add space for the search button */
+    display: none; /* Hide input by default */
+}
+
+.input.active {
+    display: block; /* Display input when search is active */
+    width: 120px;
+}
+
+.search-button {
+    width: 30px;
+    height: 30px;
+    background-image: url('./path/to/your/svg-image.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0) saturate(100%) invert(45%) sepia(92%) saturate(1291%) hue-rotate(44deg) brightness(97%) contrast(103%);
+}
+
 
 /* Общие стили для карточки */
 .card {
@@ -97,6 +128,13 @@ nav {
     display: flex;
     text-decoration: none;
 }
+
+/* Your existing CSS */
+
+.search-button {
+    cursor: pointer;
+}
+
 
 .card-image {
     width: 150px;
@@ -202,5 +240,40 @@ nav {
 
     .button{
         display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Your existing mobile styles */
+
+    .search {
+        position: relative;
+    }
+
+    .input {
+        padding-right: 30px; /* Add space for the search button */
+        display: none; /* Hide input by default */
+    }
+
+    .search-icon {
+        cursor: pointer;
+    }
+
+    .search.active .input {
+        display: block; /* Display input when search is active */
+        width: 100%;
+    }
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 769px) {
+    /* Your existing desktop styles */
+
+    .search {
+        display: flex;
+        align-items: center;
+    }
+
+    .input {
+        margin-right: 10px;
     }
 }

@@ -100,10 +100,11 @@ nav {
 }
 
 .card-glav{
+    transition: 5s all ease-in-out;
     position: fixed;
     width: 400px;
     height: 94.3vh;
-    background-color:#ff6600 ;
+    background-color:#2f2f2f ;
     display: none;
 }
 
@@ -122,26 +123,39 @@ nav {
     background-color: rgba(0, 0, 0, 0.3); /* Цвет затемнения */
 }
 
+/* Основные стили для .manga-main и изображений */
 .manga-main {
     display: flex; /* Используем flexbox для расположения изображений */
     flex-direction: column; /* Располагаем изображения друг над другом */
     align-items: center; /* Центрируем изображения по горизонтали */
     margin: 0 auto; /* Центрируем блок .manga-main по горизонтали */
-    max-width: 100%; /* Максимальная ширина блока */
     padding: 20px; /* Добавляем немного отступов */
+    max-width: 100%; /* Максимальная ширина блока */
 }
 
 .manga-main img {
-    max-width: 100%; /* Сделать изображения адаптивными */
-    height: auto; /* Сохранить пропорции изображения */
+    width: 100%; /* Ширина изображения на весь экран */
+    height: auto; /* Сохраняем пропорции изображения */
     margin-bottom: 10px; /* Добавить отступ между изображениями */
 }
 
-@media (max-width: 768px) {
+/* Медиазапросы для адаптации на разных устройствах */
+@media (min-width: 768px) {
     .manga-main {
-        padding: 10px; /* Уменьшаем отступы для мобильных устройств */
+        max-width: 80%; /* Максимальная ширина блока для больших экранов */
+    }
+
+    .manga-main img {
+        width: 100%; /* Ширина изображения на весь экран в пределах блока */
     }
 }
+
+@media (min-width: 1024px) {
+    .manga-main {
+        max-width: 60%; /* Максимальная ширина блока для еще больших экранов */
+    }
+}
+
 
 
 
