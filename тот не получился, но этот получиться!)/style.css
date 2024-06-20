@@ -253,6 +253,7 @@ img {
 .mobile-script-text {
     position: relative;
     top: -50px;
+<<<<<<< HEAD
 }
 
 .modal {
@@ -406,10 +407,143 @@ img {
 
 .card-info-content h3 {
     margin-top: 0;
+=======
+>>>>>>> 7eb59f0234db6d676f4310db9ed047ccde772097
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
 
+.modal-windows {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 
+<<<<<<< HEAD
+=======
+.btn-close {
+    position: relative;
+    top: -95px;
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Общие стили для карточек */
+.card {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-decoration: none;
+}
+
+.card-image {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 38px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.card-text {
+    margin-top: 1px;
+    color: #ffffff;
+    flex: 1;
+}
+
+.button {
+    background-color: rgb(194, 13, 13);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.button:hover {
+    background-color: rgb(145, 7, 7);
+}
+
+.mobile-script-text {
+    position: relative;
+    top: -50px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-windows {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.btn-close {
+    position: relative;
+    top: -95px;
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+>>>>>>> 7eb59f0234db6d676f4310db9ed047ccde772097
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -516,8 +650,11 @@ img {
     .avatar {
         display: none;
     }
+<<<<<<< HEAD
 
     .card-image{
         height: 200px;
     }
+=======
+>>>>>>> 7eb59f0234db6d676f4310db9ed047ccde772097
 }
